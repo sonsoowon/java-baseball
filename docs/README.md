@@ -30,7 +30,7 @@
 - [ ] 올스트라이크 및 게임 재시작/종료 선택 문구 출력
 
 - [ ] 플레이어가 게임 재시작/종료 입력
-- [ ] 잘못된 선택지를 입력하면 `IllegalArgumentException` 발생
+- [x] 잘못된 선택지를 입력하면 `IllegalArgumentException` 발생
 
 
 ## 설계
