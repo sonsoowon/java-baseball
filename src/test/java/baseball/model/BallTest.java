@@ -51,4 +51,16 @@ public class BallTest {
         assertThat(actual).isFalse();
     }
 
+
+    @DisplayName("두 객체의 위치와 숫자값이 모두 같다면 같은 객체이다")
+    @Test
+    void equalsTest() {
+        assertThat(ball1).isEqualTo(ball2);
+    }
+
+    @DisplayName("두 객체의 위치나 숫자값이 같지 않다면 다른 객체이다")
+    @Test
+    void notEqualsTest() {
+        assertThat(ball1).isNotEqualTo(ball3);
+    }
 }

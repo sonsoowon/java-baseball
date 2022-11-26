@@ -23,4 +23,12 @@ public class Ball {
     public int getNumber() {
         return number;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if(!(o instanceof Ball)) {
+            return false;
+        }
+        return (((Ball) o).getIndex() == index) && (((Ball) o).getNumber() == number);
+    }
 }
