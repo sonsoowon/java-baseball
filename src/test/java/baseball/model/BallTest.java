@@ -8,6 +8,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BallTest {
+
+    // TODO: 중복제거
     private static final Ball ball1 = new Ball(0, 1);
     private static final Ball ball2 = new Ball(0, 1);
     private static final Ball ball3 = new Ball(1, 2);
@@ -35,5 +37,18 @@ public class BallTest {
         assertThat(actual).isTrue();
     }
 
+    @DisplayName("두 객체의 위치와 숫자값이 모두 같다면 스트라이크이다")
+    @Test
+    void isStrikeTest() {
+        boolean actual = ball1.isStrikeWith(ball2);
+        assertThat(actual).isTrue();
+    }
+
+    @DisplayName("두 객체의 위치나 숫자값이 같지 않다면 스트라이크가 아니다")
+    @Test
+    void isNotStrikeTest() {
+        boolean actual = ball1.isStrikeWith(ball4);
+        assertThat(actual).isFalse();
+    }
 
 }

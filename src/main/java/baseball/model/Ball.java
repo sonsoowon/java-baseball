@@ -12,6 +12,10 @@ public class Ball {
         return (other.getIndex() != index) && (other.getNumber() == number);
     }
 
+    public boolean isStrikeWith(Ball other) {
+        return (other.getIndex() == index) && (other.getNumber() == number);
+    }
+
     public int getIndex() {
         return index;
     }
