@@ -63,4 +63,18 @@ public class BallTest {
     void notEqualsTest() {
         assertThat(ball1).isNotEqualTo(ball3);
     }
+
+    @DisplayName("동일한 객체는 동일한 hashCode를 가진다")
+    @Test
+    void equalHashCodeTest() {
+        assertThat(ball1.hashCode())
+                .isEqualTo(ball2.hashCode());
+    }
+
+    @DisplayName("서로 다른 객체는 다른 hashCode를 가진다")
+    @Test
+    void differentHashCodeTest() {
+        assertThat(ball1.hashCode())
+                .isNotEqualTo(ball3.hashCode());
+    }
 }

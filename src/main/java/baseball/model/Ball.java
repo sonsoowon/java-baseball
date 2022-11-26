@@ -1,5 +1,7 @@
 package baseball.model;
 
+import java.util.Objects;
+
 public class Ball {
     private final int index;
     private final int number;
@@ -30,5 +32,10 @@ public class Ball {
             return false;
         }
         return (((Ball) o).getIndex() == index) && (((Ball) o).getNumber() == number);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(index, number);
     }
 }
