@@ -30,4 +30,11 @@ public class BallList {
                 .anyMatch(b -> b.isStrikeWith(ball));
     }
 
+    public Result getResultOf(BallList other) {
+        int ballCnt = this.countBalls(other);
+        int strikeCnt = this.countStrikes(other);
+
+        return new Result(ballCnt, strikeCnt);
+    }
+
 }
