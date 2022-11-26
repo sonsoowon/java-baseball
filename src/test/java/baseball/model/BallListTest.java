@@ -26,4 +26,12 @@ public class BallListTest {
         assertThat(computer.countBalls(player))
                 .isEqualTo(2);
     }
+
+    @DisplayName("스트라이크 개수를 반환한다")
+    @Test
+    void countStrikesTest() {
+        assertThat(computer.countStrikes(player))
+                .isEqualTo(1);
+    }
+
 }

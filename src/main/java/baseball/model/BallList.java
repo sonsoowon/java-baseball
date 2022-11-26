@@ -20,4 +20,14 @@ public class BallList {
                 .anyMatch(b -> b.isBallWith(ball));
     }
 
+    public int countStrikes(BallList other) {
+        return (int) balls.stream()
+                .filter(other::hasStrikeOf)
+                .count();
+    }
+    private boolean hasStrikeOf(Ball ball) {
+        return balls.stream()
+                .anyMatch(b -> b.isStrikeWith(ball));
+    }
+
 }
