@@ -7,6 +7,8 @@ public class Result {
     private static final String STRIKE = "스트라이크";
     private static final String BLANK = " ";
 
+    private static final int NUMBER_SIZE = 3;
+
     private final int ballCnt;
     private final int strikeCnt;
 
@@ -26,5 +28,9 @@ public class Result {
             return strikeCnt + STRIKE;
         }
         return NOTHING;
+    }
+
+    public boolean allStrike() {
+        return strikeCnt == NUMBER_SIZE;
     }
 }

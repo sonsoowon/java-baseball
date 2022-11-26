@@ -1,6 +1,7 @@
 package baseball.model;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -20,6 +21,22 @@ public class ResultTest {
         assertThat(result.convertToString())
                 .isEqualTo(expected);
     }
+
+    @DisplayName("스트라이크 개수가 3이면 올스트라이크이다")
+    @Test
+    void allStrikeTest() {
+        Result result = new Result(0, 3);
+        assertThat(result.allStrike()).isTrue();
+    }
+
+    @DisplayName("스트라이크 개수가 3이 아니면 올스트라이크가 아니다")
+    @Test
+    void notAllStrikeTest() {
+        Result result = new Result(0, 2);
+        assertThat(result.allStrike()).isFalse();
+    }
+
+
 
 
     private static Stream<Arguments> convertToStringTestSource() {
