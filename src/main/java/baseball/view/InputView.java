@@ -14,13 +14,13 @@ public enum InputView {
     private static final String GAME_COMMAND_MESSAGE = "게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.";
 
     public static List<Integer> readPrediction() throws IllegalArgumentException {
-        System.out.println(PREDICTS_MESSAGE);
+        System.out.print(PREDICTS_MESSAGE);
         String input = Console.readLine();
         return PredictionValidator.getValidInput(input);
     }
 
     public static String readGameCommand() throws IllegalArgumentException {
-        System.out.println(GAME_COMMAND_MESSAGE);
+        System.out.print(GAME_COMMAND_MESSAGE);
         String input = Console.readLine();
         GameCommandValidator.validate(input);
         return input;
