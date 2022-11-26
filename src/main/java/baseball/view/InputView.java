@@ -1,7 +1,7 @@
 package baseball.view;
 
-import baseball.model.GameCommandValidator;
-import baseball.model.PredictionValidator;
+import baseball.model.valid.GameCommandValidator;
+import baseball.model.valid.PredictionValidator;
 import camp.nextstep.edu.missionutils.Console;
 
 import java.util.List;

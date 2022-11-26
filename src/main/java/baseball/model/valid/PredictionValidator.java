@@ -1,4 +1,4 @@
-package baseball.model;
+package baseball.model.valid;
 
 import java.util.Arrays;
 import java.util.HashSet;

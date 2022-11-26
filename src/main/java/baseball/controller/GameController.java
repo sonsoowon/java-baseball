@@ -1,6 +1,8 @@
 package baseball.controller;
 
 import baseball.model.*;
+import baseball.model.generator.BallListGenerator;
+import baseball.model.generator.NumberGenerator;
 import baseball.view.InputView;
 import baseball.view.OutputView;
 

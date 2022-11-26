@@ -1,5 +1,7 @@
-package baseball.model;
+package baseball.model.generator;
 
+import baseball.model.Ball;
+import baseball.model.generator.BallListGenerator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

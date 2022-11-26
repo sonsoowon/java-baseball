@@ -1,5 +1,6 @@
-package baseball.model;
+package baseball.model.generator;
 
+import baseball.model.generator.NumberGenerator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,6 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.COLLECTION;
 
 public class NumberGeneratorTest {
 

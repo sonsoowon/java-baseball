@@ -1,10 +1,10 @@
-package baseball.model;
+package baseball.model.valid;
 
+import baseball.model.valid.PredictionValidator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Validate;
 
 import java.util.List;
 

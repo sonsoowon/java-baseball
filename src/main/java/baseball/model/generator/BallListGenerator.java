@@ -1,4 +1,6 @@
-package baseball.model;
+package baseball.model.generator;
+
+import baseball.model.Ball;
 
 import java.util.ArrayList;
 import java.util.List;
